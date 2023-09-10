@@ -1,0 +1,307 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width:100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 191, 255, 0.7),rgb(255, 255, 255)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.navbar{
+    height:20%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+    color:rgb(255, 255, 255)
+}
+
+.menu-icon{
+    width: 10px;
+    cursor: pointer;
+    margin-left:40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left:60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#000000;
+    font-size: 13px;
+}
+
+.row{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h1{
+    font-size: 50px;
+}
+
+p{
+    font-size: 11px;
+    line-height: 15px;
+}
+
+button{
+    width:180px;
+    color:#000;
+    font-size:12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius:20px;
+    outline:none;
+    margin-top:30px;
+}
+
+.card{
+    width:200px;
+    height:230px;
+    display: inline-block;
+    border-radius:10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.imagescard {
+    width: 200px;
+    height:200px;
+    object-fit: cover;
+    border-radius:10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.my-projects{
+    width:100%;
+    height:300vh;
+    background: linear-gradient(#fff,#00bfffb3) ;
+    font-family: 'roboto', sans-serif;
+    padding-top: 10%;
+    padding-bottom:10%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.card1{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    overflow:hidden;
+    border: 8px solid #ffffff;
+    position: relative;
+}
+
+.card-img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.card-body{
+    width: 400px;
+    height: 500px;
+    top:0;
+    left:-130%;
+    position:absolute;
+    background:#0000001a;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    color:#fff;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition:2s;
+}
+.card-body2{
+    width: 400px;
+    height: 500px;
+    top:0;
+    left:-130%;
+    position:absolute;
+    background:#0000001a;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    color:#000000;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition:2s;
+}
+
+.card1:hover .card-body{
+    left: 0;
+}
+.card1:hover .card-body2{
+    left: 0;
+}
+.card-title {
+    font-size:20pt;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-right:30px;
+}
+.card-sub-title {
+    text-transform:capitalize;
+    font-size: 14px;
+    font-weight: 300;
+    padding-right:60px;
+}
+.card-info{
+    font-size:16px;
+    line-height:25px;
+    margin: 40px 0;
+    font-weight: 400;
+    padding-right:60px;
+}
+
+.card-btn{
+    color:#000000;
+    background:#00bfff;
+    padding:10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border:none;
+    outline:none;
+    font-weight:500;
+    cursor: pointer;
+    width:120px;
+}
+
+.flex-container{
+    display:flex;
+}
+.flex-container > div {
+    margin:10px;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+
+  input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
